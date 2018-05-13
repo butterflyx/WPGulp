@@ -16,6 +16,7 @@
  *      9. Generates .pot file for i18n and l10n.
  *
  * @author Ahmad Awais (@ahmadawais)
+ * @author Jean-Christoph von Oertzen (@butterflyx)
  * @version 1.0.3
  */
 
@@ -38,36 +39,36 @@ var text_domain             = 'WPGULP'; // Your textdomain here.
 var translationFile         = 'WPGULP.pot'; // Name of the transalation file.
 var translationDestination  = './languages'; // Where to save the translation files.
 var packageName             = 'WPGULP'; // Package name.
-var bugReport               = 'https://AhmadAwais.com/contact/'; // Where can users report bugs.
-var lastTranslator          = 'Ahmad Awais <your_email@email.com>'; // Last translator Email ID.
-var team                    = 'WPTie <your_email@email.com>'; // Team's Email ID.
+var bugReport               = ''; // Where can users report bugs.
+var lastTranslator          = 'Jean-Christoph von Oertzen <info@butterflyx.com>'; // Last translator Email ID.
+var team                    = ''; // Team's Email ID.
 
 // Style related.
-var styleSRC                = './assets/css/style.scss'; // Path to main .scss file.
-var styleDestination        = './'; // Path to place the compiled CSS file.
+var styleSRC                = './src/assets/css/style.scss'; // Path to main .scss file.
+var styleDestination        = './dist/'; // Path to place the compiled CSS file.
 // Default set to root folder.
 
 // JS Vendor related.
-var jsVendorSRC             = './assets/js/vendor/*.js'; // Path to JS vendor folder.
-var jsVendorDestination     = './assets/js/'; // Path to place the compiled JS vendors file.
+var jsVendorSRC             = './src/assets/js/vendor/*.js'; // Path to JS vendor folder.
+var jsVendorDestination     = './dist/assets/js/'; // Path to place the compiled JS vendors file.
 var jsVendorFile            = 'vendors'; // Compiled JS vendors file name.
 // Default set to vendors i.e. vendors.js.
 
 // JS Custom related.
-var jsCustomSRC             = './assets/js/custom/*.js'; // Path to JS custom scripts folder.
-var jsCustomDestination     = './assets/js/'; // Path to place the compiled JS custom scripts file.
+var jsCustomSRC             = './src/assets/js/custom/*.js'; // Path to JS custom scripts folder.
+var jsCustomDestination     = './dist/assets/js/'; // Path to place the compiled JS custom scripts file.
 var jsCustomFile            = 'custom'; // Compiled JS custom file name.
 // Default set to custom i.e. custom.js.
 
 // Images related.
-var imagesSRC               = './assets/img/raw/**/*.{png,jpg,gif,svg}'; // Source folder of images which should be optimized.
-var imagesDestination       = './assets/img/'; // Destination folder of optimized images. Must be different from the imagesSRC folder.
+var imagesSRC               = './src/assets/img/**/*.{png,jpg,gif,svg}'; // Source folder of images which should be optimized.
+var imagesDestination       = './dist/assets/img/'; // Destination folder of optimized images. Must be different from the imagesSRC folder.
 
 // Watch files paths.
-var styleWatchFiles         = './assets/css/**/*.scss'; // Path to all *.scss files inside css folder and inside them.
-var vendorJSWatchFiles      = './assets/js/vendor/*.js'; // Path to all vendor JS files.
-var customJSWatchFiles      = './assets/js/custom/*.js'; // Path to all custom JS files.
-var projectPHPWatchFiles    = './**/*.php'; // Path to all PHP files.
+var styleWatchFiles         = './src/assets/css/**/*.scss'; // Path to all *.scss files inside css folder and inside them.
+var vendorJSWatchFiles      = './src/assets/js/vendor/*.js'; // Path to all vendor JS files.
+var customJSWatchFiles      = './src/assets/js/custom/*.js'; // Path to all custom JS files.
+var projectPHPWatchFiles    = './src/**/*.php'; // Path to all PHP files.
 
 
 // Browsers you care about for autoprefixing.
